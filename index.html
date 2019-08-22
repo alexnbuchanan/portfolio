@@ -2,36 +2,59 @@
 <html>
   <head>
     <title>Alex Buchanan Portfolio Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://use.fontawesome.com/a1df3b9270.js"></script>
   </head>
-  <body>
 
-    <header>
-      <h1>Alex Buchanan</h1>
-        <nav>
-          <ul>
-            <li>Work</li>
-            <li>About Me</li>
-          </ul>
-        </nav>
-          <h2> Hello! My name is Alex Buchanan. I’m a UX/UI Designer with a background in market research based in Los Angeles, Ca.
-          </h2>
-     </header>
+    <body>
 
-     <main>
-       <section>
-          <img src="img/homepage_img.jpg" alt="homepage case study">
-          <h2>BeeDrive</h2>
-            <p>A cloud storage application that focuses on simplicity and ease of use</p>
-            <p>View more</p>
-        </section>
 
-        <footer>
-          <button>Let's chat</button>
-              <i class="fas fa-envelope"></i>
-              <i class="fab fa-linkedin-in"></i>
-              <a href="PLACEHOLDER.pdf">Download resume</a>      
-        </footer>
-    </main>
-  </body>
+          <header>
+              <div class="navbar">
+                <h1 class="logo">Alex Buchanan</h1>
+                  <ul class="nav">
+                    <li>Work</li>
+                    <li>About Me</li>
+                      <div class="bars">
+                        <i class="fa fa-bars fa-2x"></i>
+                      </div>
+                  </ul>
+              </div>
+           </header>
+
+           <main>
+             <div class="hero">
+                           <h2> Hello! My name is Alex Buchanan. I’m a UX/UI Designer with a background in market research based in Los Angeles, Ca.
+                           </h2>
+             </div>
+
+             <section class="section_code">
+                <img class="homepage_img_case_study" src="img/homepage_img.jpg" alt="homepage case study">
+                <span class="homepage_caption">
+                  <h2>BeeDrive</h2>
+                    <span class="homepage_caption_text">
+                    <p>A cloud storage application that focuses on simplicity and ease of use</p>
+                    <p>View more</p>
+                    </span>
+                </span>
+              </section>
+           </main>
+
+              <footer>
+                <p>Let's chat</p>
+                  <div class="parent">
+                    <a href="#" class="button">send an email</a>
+                  </div>
+                  <div class="contact_icons">
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-envelope"></i>
+                    <a href="PLACEHOLDER.pdf">Download resume</a>
+                  </div>
+              </footer>
+
+
+    </body>
 </html>

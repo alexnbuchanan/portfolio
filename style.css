@@ -28,22 +28,23 @@ header{
   grid-area: header;
   grid-column: 1 / span 3;
   width: 100%;
+  background-color: white;
 }
 
 main{
   grid-area: main;
   width: 100%;
   margin-bottom: 166px;
-  background-color: red;
+  background-color: white;
 }
 
 
 footer{
   grid-area: footer;
   grid-column: 1 / span 3;
-  background-color: orange;
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 
 .banner_case_study_wrap{
@@ -89,11 +90,16 @@ section{
   padding-right: 50px;
 }
 
+.nav > li > a {
+  text-decoration: none;
+  color: black;
+}
+
 .hero{
   margin: 0 auto;
   width: 90%;
   margin-top: 103px;
-  background-color: yellow;
+  background-color: white;
 }
 
 .hero > h2 {
@@ -109,7 +115,7 @@ section{
   margin-right: auto;
   text-align: left;
   width: 40%;
-  background-color: blue;
+  background-color: white;
 }
 
 .homepage_img_case_study{
@@ -195,8 +201,8 @@ footer > p {
 }
 
 .contact_icons {
-  margin-left: 59px;
-    margin-bottom: 10px;
+  margin-left: 5%;
+  margin-bottom: 10px;
 }
 
 .banner_case_study{
@@ -244,7 +250,7 @@ footer > p {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
-  background: pink;
+  background: white;
 }
 
 .persona_img{
@@ -345,7 +351,7 @@ main > section > h2{
 
 .margin_at_bottom{
   margin-bottom: 30px;
-  background: blue;
+  background: white;
 }
 
 
@@ -397,12 +403,65 @@ hr{
   display: none;
 }
 
+.toggle{
+  display: none;
+}
+
+.about_me_bio{
+  vertical-align: top;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 50%;
+  background-color: white;
+}
+
+.alex_pic{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.alex_pic2{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: none;
+}
+
+.about_me_bio > h2{
+  margin-top: 30px;
+  color: black;
+}
+
+.exp_bio1{
+  margin-top: 20px;
+}
+
+.exp_bio2{
+  font-style: italic;
+  margin:0;
+}
+
+.skills_bio{
+  line-height: 25px;
+}
+
+.light_blue{
+  color: #4987F4
+}
+
 @media only screen and (max-width: 768px) {
 
   main{
     width: 100%;
-    background-color: orange;
     font-size: 20px;
+    background-color: white;
   }
 
   .section_code{
@@ -417,19 +476,26 @@ hr{
     grid-template-columns: auto auto;
   }
 
+  .toggle{
+    display: none;
+  }
+
+  .about_me_bio{
+    width: 70%;
+  }
+
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
 
   body{
     grid-template-columns: 5% 90% 5%;
   }
 
   main{
-    position: ;
     width: 100%;
-    background-color: green;
     font-size: 20px;
+    background-color: white;
   }
 
   .nav > li{
@@ -441,10 +507,9 @@ hr{
   }
 
   .navbar{
-    position: relative;
     margin: 0;
-    background-color: grey;
     height: 66px;
+    background-color: white;
   }
 
   .bars{
@@ -618,11 +683,52 @@ hr{
     width: 80%;
   }
 
-  .bigtest{
-    position: relative;
+  .toggle{
+    position: absolute;
+    width: 100%;
     margin: 0;
-    background-color: orange;
-    height: 66px;
+    display: block;
+    font-family: inter;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    display: none;
+    background-color: #C9DAF7;
+  }
+
+  .toggle > p:last-child {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .toggle > p > a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .active{
+    display: block;
+  }
+
+  .about_me_bio{
+    width: 100%;
+  }
+
+  .alex_pic{
+    display: none;
+  }
+
+  .alex_pic2{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: block;
+  }
+
+  .about_me_bio > h2:first-child{
+    margin-top: 0;
   }
 
 }

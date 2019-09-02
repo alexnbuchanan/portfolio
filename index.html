@@ -7,6 +7,7 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://use.fontawesome.com/a1df3b9270.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
 
     <body>
@@ -16,15 +17,24 @@
               <div class="navbar">
                 <h1 class="logo">Alex Buchanan</h1>
                   <ul class="nav">
-                    <li>Work</li>
-                    <li>About Me</li>
+                    <li>
+                      <a href="index.html">Work</a>
+                    </li>
+                    <li>
+                      <a href="about_me.html">About Me</a>
+                    </li>
                       <div class="bars">
                         <i class="fa fa-bars fa-2x"></i>
                       </div>
                   </ul>
               </div>
-              <ul class="bigtest">
-                <p>test</p>
+              <ul class="toggle">
+                <p>
+                  <a href="index.html">Work</a>
+                </p>
+                <p>
+                  <a href="about_me.html">About Me</a>
+                </p>
               </ul>
            </header>
 
@@ -33,7 +43,7 @@
 
 
              <div class="hero">
-                           <h2> Hello! My name is Alex Buchanan. I’m a UX/UI Designer with a background in market research based in Los Angeles, Ca.
+                           <h2> <span class="light_blue">Hello!</span> My name is Alex Buchanan. I’m a UX/UI Designer with a background in market research based in <span class="light_blue">Los Angeles, Ca.</span>
                            </h2>
              </div>
 
@@ -43,7 +53,9 @@
                   <h2>BeeDrive</h2>
                     <span class="homepage_caption_text">
                     <p>A cloud storage application that focuses on simplicity and ease of use</p>
-                    <p>View more</p>
+                    <p>
+                      <a href="project.html">View more</a>
+                    </p>
                     </span>
                 </span>
               </section>
@@ -61,6 +73,10 @@
                   </div>
               </footer>
 
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
+<script src="scripts.js"></script>
 
     </body>
 </html>

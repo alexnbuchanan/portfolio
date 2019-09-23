@@ -546,7 +546,7 @@ h1 {
 
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 414px) {
 
   body{
     grid-template-columns: 5% 90% 5%;
